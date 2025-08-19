@@ -32,12 +32,66 @@
         </ul>
         
     </p>
+    <!-- 텍스트 입력 폼 -->
     <form action="https://search.naver.com/search.naver" method="get">
         <label> <!-- 영역 지정-->
             검색어 : <input type="text" name="query" placeholder="검색어를 입력해주세요" required />
         </label>
         <button>검색</button>
-
     </form>
+
+    <!--드롭다운-->
+    <form action="https://search.naver.com/search.naver"
+        method="get">
+        <label>
+            검색어 :
+            <select name="query">
+                <option value="JAVA">JAVA</option>
+                <option value="SQL">SQL</option>
+                <option value="HTML">HTML</option>
+            </select>
+        </label>
+        <button>검색</button>
+    </form>
+
+    <!--라디오 버튼-->
+    <form action="https://search.naver.com/search.naver"
+        method="get">
+        <label>
+            검색어 :
+                <label>
+                    <input type="radio" name="query" value="JAVA">JAVA</input>
+                </label>
+                <label>
+                    <input type="radio" name="query" value="SQL">SQL</input>
+                </label>
+                <label>
+                    <input type="radio" name="query" value="HTML">HTML</label>
+                </label>
+        </label>
+        <button>검색</button>
+    </form>
+
+    <!--자동완성-->
+    <form action="https://search.naver.com/search.naver" method="get">
+        <label> 
+            검색어 : <input type="text" name="query" list="keywords" />
+            <datalist id="keywords">
+                <option value="JAVA">JAVA</option>
+                <option value="SQL">SQL</option>
+                <option value="HTML">HTML</option>
+            </datalist>
+        </label>
+        <button>검색</button>
+    </form>   
+    
+    <!--textarea-->
+    <form action="https://search.naver.com/search.naver" method="get">
+        <label> 
+            검색어 : 
+            <textarea name="query" rows="4" cols="50" placeholder="검색어를 입력해주세요"></textarea>
+        </label>
+        <button>검색</button>
+    </form> 
   </body>
 </html>
