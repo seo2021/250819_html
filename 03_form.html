@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>폼 테스트</title>
+  </head>
+  <body>
+    <p>
+        <ul>
+            <li>
+                https://search.naver.com/search.naver
+            </li>
+            <li>
+                <strong>&sm=top_hty</strong>
+            </li>
+            <li>
+                <strong>?where=nexearch</strong>
+            </li>
+            <li>
+                &fbm=0
+            </li>
+            <li>
+                &ie=utf8
+            </li>
+            <li>
+                <strong>&query=자바</strong>
+            </li>
+            <li>
+                &ackey=1jp3gcxz
+            </li>
+        </ul>
+        
+    </p>
+    <form action="https://search.naver.com/search.naver" method="get">
+        <label> <!-- 영역 지정-->
+            검색어 : <input type="text" name="query" placeholder="검색어를 입력해주세요" required />
+        </label>
+        <button>검색</button>
+
+    </form>
+  </body>
+</html>
